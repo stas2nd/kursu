@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="классы, стили, свойства">
+  <title>Фичи с курсов</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+      <del datetime> выделяет текст, который был удалён в новой версии документа.</del>
+      <ins datetime> выделяет текст, который был добавлен в новой версии документа.</ins>
+      Изменить это поведение браузера можно с помощью тега <pre>, который обозначает «предварительно отформатированный текст».
+      <mark>, который обозначает выделенный текст.</mark>
+      Для того, чтобы добавить ссылке всплывающую подсказку, надо использовать атрибут title.
+     <pre> @font-face {
+    font-family: "Roboto";
+    src:
+        local("Roboto Regular"),
+        url("/assets/course73/roboto.woff") format("woff");
+     }
+     </pre>
+      <time datetime="2014-04-20">Вчера</time> мы готовили курс к публикации.
+      <figure>
+    схема,
+    график,
+    диаграмма
+    и так далее
+    <figcaption>Легенда</figcaption>
+      </figure>
+      <video
+              controls
+              preload="metadata"
+              width="400" height="225">
+         <source src="video.mp4" type="video/mp4">
+         <source src="video.ogv" type="video/ogg">
+      </video>
+      <audio controls preload="metadata">
+         <source src="sound.mp3" type="audio/mpeg">
+         <source src="sound.oga" type="audio/ogg">
+      </audio>
+    </div>
+    <div>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input type="text" name="search" value="ghsdkg">
+        <input type="password" name="password" id="password-field" value="Где же звёздочки?">
+        <input type="submit">
+        <textarea rows="2" cols="4">Значение по умолчанию</textarea>
+        <input type="checkbox" checked>
+        <input type="radio" name="rr" value="1">
+        <input type="radio" name="rr" value="2">
+        <input type="radio" name="rr" value="3">
+        <select name="theme[]" multiple size="20">
+          <option value="light">Светлая тема</option>
+          <option value="dark">Тёмная тема</option>
+        </select>
+      </form action="https://echo.htmlacademy.ru" method="get">
+      <form enctype="multipart/form-data" action="https://echo.htmlacademy.ru" method="get">
+        <input type="file" name="avatar">
+      </form>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        Скрытое поле — это тег <input> с типом hidden.
+        В HTML-формах есть специальная кнопка, которая сбрасывает введённые значения и возвращает изначально установленные. Это поле ввода с типом reset.
+        Пример использования:
+        <input type="reset" value="Сбросить">
+        <input type="button" value="Кнопка">
+        <input type="image" src=".html" alt="sdf">
+        <button>Календарь <img src="/assets/course74/calend.png" alt=""></button>
+      </form>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <input type="text" required>
+        <input type="date">
+        <input type="time">
+        datetime	выбор даты с указанием времени (c учетом временной зоны)
+        datetime-local	выбор даты с указанием времени (без учета временной зоны)
+        week	выбор порядкового номера недели в году и года
+        month	выбор месяца и года
+
+        <input type="text" list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Safari">
+        </datalist>
+
+        <input type="number">
+        При помощи вспомогательных атрибутов min и max можно установить верхнюю и нижнюю границу допустимых значений. А атрибут step устанавливает величину шага изменения значения.
+        <input type="range" min="1" max="10">
+        <input type="search">
+        <input type="text" autofocus>
+      </form>
+
+      <form oninput="sum.value=dayscount.value">
+        Область для вывода результата
+        <output name="sum">[значение по умолчанию]</output>
+      </form>
+
+        <fieldset>
+          <legend>Заголовок группы</legend>
+          <input type="text">
+          <input type="text">
+        </fieldset>
+        <fieldset>
+          <input type="text">
+        </fieldset>
+      </form>
+
+      <form>
+        <input type="text" pattern="[0-9]{3}-[0-9]{5}">
+        <input type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+        Подсказка при заполнении полей
+        <input type="text" placeholder="Текст подсказки">
+        <input type="email">
+        <input type="url">
+        <input type="color">
+      </form>
+
+      <form>
+        <select name="variants">
+          <optgroup label="Группа вариантов 1">
+            <option value="1">Вариант 1</option>
+            <option value="2">Вариант 2</option>
+            <option value="3">Вариант 3</option>
+          </optgroup>
+          <optgroup label="Группа вариантов 2">
+            <option value="4">Вариант 4</option>
+            <option value="5">Вариант 5</option>
+            <option value="6">Вариант 6</option>
+          </optgroup>
+        </select>
+
+        <input type="text" readonly>
+        <input type="text" disabled>
+        <input type="text" autocomplete="off">
+        Переключение между полями
+        <input type="text" tabindex="3">
+      </form>
+    </div>
+    Фиксированное позиционирование
+    Значение fixed свойства position задаёт элементу фиксированное позиционирование.
+    Фиксированное позиционирование похоже на абсолютное, но есть и отличия:
+    Фиксированный элемент тоже выпадает из потока.
+    Фиксированный элемент привязывается к определенной точке в окне браузера и остается на ней всегда, даже при прокрутке страницы.
+    Фиксированный элемент можно позиционировать с помощью свойств top, left, right, bottom, но точка отсчета всегда привязана к окну браузера.
+    <div class="div1">
+      <ul class="main-menu">
+        <li><a href="#company">О компании</a></li>
+        <li>
+          <a href="#services">Услуги</a>
+          <ul class="sub-menu">
+            <li><a href="#1">Разработка</a></li>
+            <li><a href="#2">Продвижение</a></li>
+            <li><a href="#3">Контекст</a></li>
+          </ul>
+        </li>
+        <li><a href="#team">Сотрудники</a>
+          <ul class="sub-menu">
+            <li><a href="#1">Руководство</a></li>
+            <li><a href="#2">Рабочие</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="div2">
+      <div class="paginator">
+        <a class="prev" href="#prev">Назад</a>
+        <a href="#1">1</a>
+        <span>&hellip;</span>
+        <a href="#100">100</a>
+        <a class="next" href="#next">Вперёд</a>
+      </div>
+    </div>
+
+    <div class="div3">
+      <div class="share">
+        <b>Соцсети</b>
+        <a class="social social-vk" href="http://vk.com/htmlacademy"></a>
+        <a class="social social-fb" href="http://www.facebook.com/htmlacademy"></a>
+        <a class="social social-tw" href="http://twitter.com/htmlacademy_ru"></a>
+      </div>
+    </div>
+
+    <div class="div4">
+      <div class="comment">
+        <div class="comment-avatar"></div>
+        <div class="comment-author">Дима Дивов</div>
+        <div class="comment-text">
+          Верстать сайты надо только на дивах!
+          <div class="comment-date">16.09.2013</div>
+        </div>
+        <a href="#reply" title="Ответить" class="comment-reply"></a>
+      </div>
+      <div class="comment">
+        <div class="comment-avatar"></div>
+        <div class="comment-author">Степан Спанов</div>
+        <div class="comment-text">
+          Не согласен, лучше спаны.
+          <div class="comment-date">17.09.2013</div>
+        </div>
+        <a href="#reply" title="Ответить" class="comment-reply"></a>
+      </div>
+    </div>
+
+    <div class="div5">
+      <section class="shape nerds">
+        <a class="overlay round" href="#">Маска</a>
+        <div class="details bg">
+          <header>nёrds</header>
+          <p>Сайт маленькой, но гордой дизайн-студии из Краснодара: фиксированная вёрстка, спрайты, HTML5, CSS3, javascript.</p>
+          <a class="button" href="/">Посмотреть</a>
+        </div>
+      </section>
+      <section class="shape techmarkt">
+        <a class="overlay octagon" href="#">Маска</a>
+        <div class="details">
+          <header>Техномаркт</header>
+          <p>Сайт интернет-магазина строительных материалов и инструментов для ремонта: фиксированная вёрстка, спрайты, HTML5, CSS3.</p>
+          <a class="button" href="#">Посмотреть</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="div6">
+      <section class="works">
+        <a class="caption-link" href="#" data-title="Sunset" data-description="Сайт туристического агентства, специализирующегося на незабываемых поездках в тёплые страны.">
+          <img src="shot-1.jpg" alt="Sunset">
+        </a>
+      </section>
+    </div>
+
+     <div class="div7">
+       <h1>Эффектные ссылки</h1>
+       <div class="effect-1">
+         <a href="#">Апельсин</a>
+       </div>
+       <div class="effect-2">
+         <a href="#">Виноград</a>
+       </div>
+       <div class="effect-3">
+         <a href="#" data-hover="Лайм">Лайм</a>
+       </div>
+       <div class="effect-4">
+         <a href="#">Киви</a>
+       </div>
+     </div>
+
+      <div class="div8">
+        <blockquote class="outer">
+          <div class="inner">
+            <p>Любую теорию можно согласовать с любым фактом, если принять некоторые дополнительные допущения.</p>
+            <footer>
+              <a href="">— Хантер С. Томпсон</a>
+            </footer>
+          </div>
+        </blockquote>
+      </div>
+
+      <div class="div9">
+        <section>
+          <h1>Кексогалерея</h1>
+          <div class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides">
+                <img src="keks-1-small.jpg" alt="Кекс смотрит на еду">
+                <img src="keks-2-small.jpg" alt="Кекс смотрит на тебя">
+                <img src="keks-3-small.jpg" alt="Кекс не хочет никуда смотреть">
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="div10">
+        <div class="breadcrumbs">
+          <a href="#">Главная</a>
+          <a class="active" href="#">Курсы</a>
+          <a href="#">Селекторы</a>
+        </div>
+      </div>
+
+      <div class="div11">
+        <div class="buttons">
+          <button class="btn-green">
+            <img class="icon" src="reload-6x-white.png"> Обновить
+          </button>
+          <button class="btn-yellow">
+            <span class="hidden">25 <img src="dollar-6x-white.png"></span>
+            <img class="icon" src="cart-6x-white.png"> Купить
+          </button>
+          <button class="btn-blue">
+            <span class="hidden"><img src="envelope-open-6x-white.png"></span>
+            <img class="icon" src="envelope-closed-6x-white.png"> Прочитать
+          </button>
+        </div>
+      </div>
+
+      <div class="div12">
+        <nav class="circle-menu">
+          <div class="center"></div>
+          <ul>
+            <li><a href="#">monitor</a></li>
+            <li><a href="#">aperture</a></li>
+            <li><a href="#">audio</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    <div class="div13">
+      <section class="card">
+        <h1 class="question"><span>HTML расшифровывается как «How To Meet Ladies»?</span></h1>
+        <form class="answers">
+          <button class="fab">&#58882;</button>
+          <div class="yes-no-selector">
+            <div class="paper-btn paper-btn-true">
+              <input type="radio" name="answer" id="yes-answer">
+              <label for="yes-answer">Правда</label>
+            </div>
+            <div class="paper-btn paper-btn-false">
+              <input type="radio" name="answer" id="no-answer">
+              <label for="no-answer">Ложь</label>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="div14">
+      <section class="card">
+        <h1 class="question"><span>Какие значения свойства position правильные?</span></h1>
+        <form class="answers">
+          <button class="fab">&#58882;</button>
+          <div>
+            <input type="checkbox" id="answer1">
+            <label for="answer1">absolute</label>
+          </div>
+          <div>
+            <input type="checkbox" id="answer2">
+            <label for="answer2">great</label>
+          </div>
+          <div>
+            <input type="checkbox" id="answer3">
+            <label for="answer3">majestic</label>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="div15">
+      <section class="card">
+        <h1 class="question"><span>Каким свойством CSS можно скрыть элемент?</span></h1>
+        <form class="answers">
+          <button class="fab">&#58882;</button>
+          <div>
+            <input type="radio" name="answer" id="answer7">
+            <label for="answer7">transparency</label>
+          </div>
+          <div>
+            <input type="radio" name="answer" id="answer8">
+            <label for="answer8">opacity</label>
+          </div>
+          <div>
+            <input type="radio" name="answer" id="answer9">
+            <label for="answer9">invisibility</label>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="div16">
+      <section class="card">
+        <h1 class="question"><span>Каких тегов в HTML никогда не было?</span></h1>
+        <form class="answers">
+          <button class="fab">&#58882;</button>
+          <div>
+            <input type="checkbox" id="answer4">
+            <label for="answer4">nextid</label>
+          </div>
+          <div>
+            <input type="checkbox" id="answer5">
+            <label for="answer5">bgsound</label>
+          </div>
+          <div>
+            <input type="checkbox" id="answer6">
+            <label for="answer6">hole</label>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="div17">
+      <section class="card card-bordered">
+        <div class="menu-icon menu-icon-open">
+          <span></span>
+        </div>
+      </section>
+    </div>
+
+    <div class="div18">
+      <section class="card">
+        <h1 class="question"><span>Как назывался самый первый браузер?</span></h1>
+        <form class="answers">
+          <button class="fab">&#58882;</button>
+          <div>
+            <input type="text" required>
+            <div class="label-box">
+              <label>Слово по-английски</label>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

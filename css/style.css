@@ -1,0 +1,1218 @@
+﻿
+div {
+    margin-right: auto;
+    margin-left: auto;
+}
+.div8,
+.div13 {
+    background: green;
+}
+.div13,
+.div14,
+.div15,
+.div16,
+.div17,
+.div18 {
+    width: 500px;
+    margin-left: 100px;
+}
+}
+/* Класс псевдораспорки */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.div1 .main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #e5e5e5;
+}
+
+.div1 .main-menu > li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.div1 .main-menu a {
+    display: block;
+    margin-left: -1px;
+    padding: 8px 10px;
+    color: #0088cc;
+    border-left: 1px solid #e5e5e5;
+}
+
+.div1 .main-menu a:hover {
+    background: #f5f5f5;
+}
+
+.div1 .main-menu .sub-menu {
+    position: absolute;
+    left: 1px;
+    display: none;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fcf8e3;
+}
+
+.div1 .main-menu .sub-menu a {
+    margin-bottom: -1px;
+    border: 1px solid #e5e5e5;
+}
+
+.div1 .main-menu > li:hover .sub-menu {
+    display: block;
+}
+
+.div2 .paginator {
+    width: 280px;
+    margin: 30px auto;
+    padding: 10px;
+    white-space: nowrap;
+    background: #ecf0f1;
+}
+
+.div2 .paginator a,
+.div2 .paginator span {
+    display: inline-block;
+    min-width: 20px;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #95a5a6;
+}
+
+.div2 .paginator .prev {
+    margin-right: 20px;
+    text-indent: -1000px;
+    background-image: url("https://htmlacademy.ru/assets/course14/arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.div2 .paginator .next {
+    margin-left: 20px;
+    text-indent: -1000px;
+    background-image: url("https://htmlacademy.ru/assets/course14/arrows.png");
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+}
+
+.div2 .paginator .current {
+    background-color: #16a085;
+}
+
+.div2 .paginator .disabled {
+    opacity: 0.3;
+}
+
+.div2 .paginator a:hover {
+    background-color: #2ecc71;
+}
+
+.div3 .share {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 10px;
+    padding-left: 20px;
+    background: #ecf0f1;
+}
+
+.div3 .share b {
+    margin-right: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #7f8c8d;
+}
+
+.div3 .social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #bdc3c7;
+    vertical-align: middle;
+    background-image: url("https://htmlacademy.ru/assets/course14/social.png");
+    background-repeat:  no-repeat;
+}
+
+.div3 .social-vk {
+    background-color: #6d8fb3;
+    background-position: 0 0;
+}
+
+.div3 .social-fb {
+    background-color: #6d8fb3;
+    background-position: -40px 0;
+}
+
+.div3 .social-tw {
+    background-color: #6d8fb3;
+    background-position: -80px 0;
+}
+
+.div4 .comment {
+    position: relative;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.div4 .comment-avatar {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 70px;
+    height: 70px;
+    background: #7f8c8c url("https://htmlacademy.ru/assets/course14/avatar.png") no-repeat 50% 50%;
+}
+
+.div4 .comment-author {
+    margin-bottom: 5px;
+    padding-left: 45px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.div4 .comment-text {
+    padding: 12px;
+    padding-left: 45px;
+    background-color: #f8f8f8;
+    border-bottom: 5px solid #e5e6e6;
+}
+
+.div4 .comment-date {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #bdc3c7;
+}
+
+.div4 .comment-reply {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background: url("https://htmlacademy.ru/assets/course14/reply.png") no-repeat 0 0;
+}
+
+.div5 section {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.div5 .shape {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.div5 .shape .details {
+    display: none;
+    width: 310px;
+    height: 310px;
+    padding-top: 60px;
+    color: #ffffff;
+    background-color: rgba(75, 90, 120, 0.9);
+}
+
+.div5 .details header {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 26px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cccccc;
+}
+
+.div5 .details p {
+    width: 70%;
+    margin: 10px auto;
+    line-height: 1.4;
+}
+
+.div5 .button {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2f3644;
+    border-radius: 20px;
+}
+
+.div5 .button:hover {
+    color: #2f3644;
+    background-color: #ffffff;
+}
+
+.div5 .shape.techmarkt {
+    background: url("https://htmlacademy.ru/techmarkt.jpg") no-repeat 30% 0%;
+}
+
+.div5 .shape.nerds {
+    background: url("https://htmlacademy.ru/nerds.jpg") no-repeat 30% 0%;
+}
+
+.div5 .shape:hover .details {
+    display: block;
+}
+
+.div5 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 310px;
+    height: 310px;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    outline: 0;
+    transition: transform 0.6s ease-out;
+    transform: scale(1);
+}
+
+.div5 .shape:hover .overlay {
+    transform: scale(1.07);
+}
+
+.div5 .overlay.octagon {
+    background-image: url("https://htmlacademy.ru/oct.svg");
+}
+
+.div5 .overlay.round {
+    background-image: url("https://htmlacademy.ru/round.svg");
+}
+.div6 .works {
+    width: 240px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 3px #cccccc;
+}
+
+.div6 .caption-link {
+    position: relative;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+}
+
+.div6 .caption-link img {
+    display: block;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.div6 .caption-link:hover img {
+    transform: translateX(100%);
+}
+
+.div6 .caption-link::before,
+.div6 .caption-link::after {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    text-align: center;
+    background: #333333;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-80px);
+}
+
+.div6 .caption-link::before {
+    content: attr(data-title);
+    height: 30%;
+    padding: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.div6 .caption-link::after {
+    content: attr(data-description);
+    top: 30%;
+    height: 70%;
+    padding: 0 30px;
+    color: #d7bb97;
+}
+
+.div6 .caption-link:hover::before,
+.div6 .caption-link:hover::after {
+    transform: translateX(0);
+}
+
+.div7 h1 {
+    margin: 25px 0;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.div7 a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.div7 div[class^="effect-"] {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.div7 .effect-1 {
+    background-color: #f19f0f;
+}
+
+.div7 .effect-1 a {
+    padding: 6px 0 8px;
+    color: #ffffff;
+}
+
+.div7 .effect-1 a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(10px);
+}
+
+.div7 .effect-1 a:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.div7 .effect-2 {
+    background-color: #435a6b;
+}
+
+.div7 .effect-2 a {
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+.div7 .effect-2 a::before,
+.div7 .effect-2 a::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.2;
+    transition: all 0.3s;
+}
+
+.div7 .effect-2 a::before {
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+}
+
+.div7 .effect-2 a::after {
+    right: 0;
+    bottom: 0;
+    transform: rotate(90deg);
+    transform-origin: 100% 100%;
+}
+
+.div7 .effect-2 a:hover::before {
+    left: 50%;
+    opacity: 1;
+    transform: rotate(0deg) translateX(-50%);
+}
+
+.div7 .effect-2 a:hover::after {
+    right: 50%;
+    opacity: 1;
+    transform: rotate(0deg) translateX(50%);
+}
+
+.div7 .effect-3 {
+    background-color: #2ac56c;
+}
+
+.div7 .effect-3 a {
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.div7 .effect-3 a::before {
+    content: attr(data-hover);
+    position: absolute;
+    color: #ffffff;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.div7 .effect-3 a:hover::before {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.div7.effect-4 {
+    background-color: #3fa46a;
+}
+
+.div7 .effect-4 a {
+    padding: 8px;
+    font-weight: bold;
+    color: #237546;
+}
+
+.div7 .effect-4 a:hover {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.div7 .effect-4 a::before,
+.div7 .effect-4 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.div7 .effect-4 a::before {
+    top: 0;
+    transform: translateY(-10px);
+}
+
+.div7 .effect-4 a::after {
+    bottom: 0;
+    transform: translateY(10px);
+}
+
+.div7 .effect-4 a:hover::before,
+.div7 .effect-4 a:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.div8 .outer {
+    position: relative;
+    display: block;
+    max-width: 320px;
+    margin: 50px auto 0;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border: 1px solid #888888;
+    border-width: 1px 0;
+}
+
+.div8 .inner {
+    position: relative;
+    padding: 0px 40px;
+    font-style: italic;
+    background-color: #ffffff;
+}
+
+.div8 .inner p {
+    margin: 0 0 1.0em;
+    font-size: 1.5em;
+}
+
+.div8 .inner footer {
+    display: block;
+    text-align: right;
+}
+
+.div8 .inner footer a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.div8 .inner {
+    margin: 0 -20px;
+}
+
+.div8 .inner::before,
+.div8 .inner::after,
+.div8 .outer::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #ffffff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.div8 .inner::before {
+    bottom: -60px;
+    left: -40px;
+    clip: rect(auto, auto, 40px, 40px);
+}
+
+.div8 .inner::after {
+    right: -40px;
+    bottom: -60px;
+    clip: rect(auto, 40px, 40px, auto);
+}
+
+.div8 .outer::before {
+    top: -40px;
+    left: -60px;
+    clip: rect(40px, auto, auto, 40px);
+}
+
+.div8 .outer::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -60px;
+    clip: rect(40px, 40px, auto, auto);
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.div9 section {
+    width: 450px;
+    margin: 40px auto;
+    background-color: white;
+    box-shadow: 0 0 3px #cccccc;
+}
+
+.div9 h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.div9 .slider {
+    position: relative;
+}
+
+.div9 .slider input[type=radio] {
+    display: none;
+}
+
+.div9 .slider-inner {
+    overflow: hidden;
+}
+
+.div9 .slider-slides {
+    width: 300%;
+    transition: transform 0.8s ease;
+}
+
+.div9 .slider-slides img {
+    float: left;
+    width: 450px;
+    height: 320px;
+}
+
+.div9 .slider-controls {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.div9 .slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background-color: #cccccc;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.div9 #btn-1:checked ~ .slider-controls label[for="btn-1"],
+.div9 #btn-2:checked ~ .slider-controls label[for="btn-2"],
+.div9 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: #666666;
+}
+
+.div9 #btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+
+.div9 #btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-450px);
+}
+
+.div9 #btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-900px);
+}
+
+.div10 .breadcrumbs {
+    display: inline-block;
+    margin: 150px 0;
+    color: black;
+    box-shadow: 0 0 2px #aaaaaa;
+    counter-reset: flag;
+}
+
+.div10 .breadcrumbs a {
+    position: relative;
+    float: left;
+    padding-left: 60px;
+    padding-right: 10px;
+    text-decoration: none;
+    line-height: 36px;
+    color: black;
+    background-color: white;
+    transition: background-color 0.1s;
+}
+
+.div10 .breadcrumbs a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -18px;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50px 0 0 0;
+    box-shadow: 1px 1px 0 1px #dddddd;
+    transform: rotate(-45deg) scale(0.73);
+    transition: background-color 0.1s;
+}
+
+.div10 .breadcrumbs a:hover,
+.div10 .breadcrumbs a:hover::after,
+.div10 .breadcrumbs a.active,
+.div10 .breadcrumbs a.active::after {
+    background-color: #f1c40f;
+}
+
+.div10 .breadcrumbs a::before {
+    content: counter(flag);
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    line-height: 20px;
+    box-shadow: 0 0 2px #cccccc;
+    counter-increment: flag;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.div10 .breadcrumbs a:first-child {
+    padding-left: 46px;
+}
+
+.div10 .breadcrumbs a:first-child::before {
+    left: 14px;
+}
+
+.div11 .buttons {
+    width: 400px;
+    margin: 50px auto;
+    padding: 10px 20px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 3px #cccccc;
+}
+
+.div11 button {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    padding: 0;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease-in-out;
+}
+
+.div11 button:active {
+    top: 1px;
+    box-shadow: none;
+}
+
+.div11 .icon {
+    position: absolute;
+    left: 20px;
+}
+
+.div11 .hidden {
+    position: absolute;
+    opacity: 0;
+}
+
+.div11 .hidden img {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.div11 .btn-yellow {
+    background: #f1c40f;
+    border-bottom: 2px solid #e2b607;
+    box-shadow: inset 0 -2px #e2b607;
+}
+
+.div11 .btn-green {
+    background: #1abc9c;
+    border-bottom: 2px solid #12ab8d;
+    box-shadow: inset 0 -2px #12ab8d;
+}
+
+.div11 .btn-blue {
+    background: #2980b9;
+    border-bottom: 2px solid #2475ab;
+    box-shadow: inset 0 -2px #2475ab;
+}
+
+.div11 .btn-green .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.4s ease-in-out;
+}
+
+.div11 .btn-green:hover .icon {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.div11 .btn-yellow .icon {
+    width: 32px;
+    height: 32px;
+    transition: all 0.4s ease-in-out;
+}
+
+.div11 .btn-yellow:hover .hidden {
+    left: 20px;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.div11 .btn-yellow:hover .icon {
+    transform: scale(10);
+    opacity: 0;
+}
+
+.div11 .btn-blue .icon {
+    width: 28px;
+    height: 28px;
+    transition: all 0.2s ease-in-out;
+}
+
+.div11 .btn-blue .hidden {
+    left: 15px;
+    top: 12px;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.div11 .btn-blue .hidden img {
+    width: 28px;
+    height: 28px;
+}
+
+.div11 .btn-blue:hover .hidden {
+    opacity: 1;
+    transition:
+            opacity 0.2s ease-in-out,
+            transform 0.2s ease-in-out 0.1s;
+    transform: scale(1);
+}
+
+.div11 .btn-blue:hover .icon {
+    opacity: 0;
+}
+
+.div12 .circle-menu {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    background: white;
+    box-shadow: 0 0 3px #cccccc;
+}
+
+.div12 .circle-menu ul {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    padding: 0;
+    list-style: none;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.div12 .circle-menu .center{
+    position: absolute;
+    top: 195px;
+    left: 195px;
+    z-index: 1000;
+    border: 5px solid #34495e;
+    border-radius: 50%;
+    box-shadow: 0 0 3px #cccccc;
+}
+
+.div12 .circle-menu li {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 160px;
+    height: 160px;
+    transform-origin: 100% 100%;
+    overflow: hidden;
+}
+
+.div12 .circle-menu li:nth-child(1) {
+    transform: rotate(0deg) skew(30deg);
+}
+
+.div12 .circle-menu li:nth-child(2) {
+    transform: rotate(60deg) skew(30deg);
+}
+
+.div12 .circle-menu li:nth-child(3) {
+    transform: rotate(120deg) skew(30deg);
+}
+
+.div12 .circle-menu li a {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 0;
+    background: rgba(241, 196, 15, 0.5) url("https://htmlacademy.ru/monitor-4x.png") no-repeat 50% 40%;
+    transition: background-color 0.5s;
+    transform: skew(-30deg) rotate(-60deg);
+}
+
+.div12 .circle-menu li:nth-child(even) a {
+    background-color: rgba(241, 196, 15, 0.75);
+}
+
+.div12 .circle-menu li a:hover {
+    background-color: rgba(241, 196, 15, 1);
+}
+
+/* Иконки */
+
+.div12 .circle-menu li:nth-child(2) a {
+    background-image: url("aperture-4x.png");
+}
+
+.div12 .circle-menu li:nth-child(3) a {
+    background-image: url("audio-4x.png");
+}
+
+.div12 .circle-menu li:nth-child(4) a {
+    background-image: url("battery-empty-4x.png");
+}
+
+.div12 .circle-menu li:nth-child(5) a {
+    background-image: url("bluetooth-4x.png");
+}
+
+.div12 .circle-menu li:nth-child(6) a {
+    background-image: url("browser-4x.png");
+}
+
+
+.div13 .paper-btn {
+    display: inline-block;
+    margin: 58px 12px;
+}
+
+.div13 .paper-btn label {
+    display: inline-block;
+    width: 80px;
+    line-height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #616161;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.div13 .paper-btn input {
+    display: none;
+}
+
+.div13 .paper-btn input:checked ~ label {
+    color: #f1f1f1;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.div13 .paper-btn-true input:checked ~ label {
+    background-color: #00e676;
+}
+
+.div13 .paper-btn-false input:checked ~ label {
+    background-color: #ff5252;
+}
+
+
+.div14 label {
+    position: relative;
+    cursor: pointer;
+}
+
+.div14 label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -44px;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #5a5a5a;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.div14 input[type="checkbox"] {
+    display: none;
+}
+
+.div14 input[type="checkbox"]:checked ~ label::before {
+    width: 21px;
+    height: 10px;
+    border-color: #00bad2;
+    border-top-style: none;
+    border-right-style: none;
+    transform: rotate(-45deg);
+}
+
+.div15 label {
+    position: relative;
+    cursor: pointer;
+}
+
+.div15 label::before,
+.div15 label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -42px;
+    border-radius: 50%;
+}
+
+.div15 label::before {
+    width: 12px;
+    height: 12px;
+    border: solid 2px #5a5a5a;
+}
+
+.div15 label::after {
+    width: 16px;
+    height: 16px;
+    background-color: #00bad2;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 0.28s;
+}
+
+.div15 input[type="radio"] {
+    display: none;
+}
+
+.div15 input[type="radio"]:checked ~ label::after {
+    transform: scale(1.1);
+}
+
+.div16 label {
+    position: relative;
+    display: inline-block;
+    max-width: 100px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.div16 label::before,
+.div16 label::after {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+.div16 label::before {
+    top: 7px;
+    left: 108px;
+    width: 32px;
+    height: 1px;
+    border-top: 1px solid #5a5a5a;
+}
+
+.div16 label::after {
+    top: 0px;
+    left: 100px;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border: solid 2px #5a5a5a;
+    border-radius: 50%;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+}
+
+.div16 input[type="checkbox"] {
+    display: none;
+}
+
+.div16 input[type="checkbox"]:checked ~ label::after {
+    transform: translateX(32px);
+    background-color: #0f9d58;
+    border-color: #0f9d58;
+}
+.div17 .card {
+    margin-top: 50px;
+    margin-right: 100px;
+  width: 400px;
+    height: 400px;
+}
+
+.div17 .card .menu-icon span {
+    display: block;
+    width: 100%;
+    height: 12px;
+    background-color: #40d47e;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.div17 .menu-icon span::before,
+.div17 .menu-icon span::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 12px;
+    background-color: #40d47e;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+
+.div17 .menu-icon span::before {
+    transform: translate(0, -24px);
+}
+
+.div17 .menu-icon span::after {
+    transform: translate(0, 12px);
+}
+
+.div17 .menu-icon-open span {
+    transform: rotate(180deg);
+}
+
+.div17 .menu-icon-open span::before,
+.div17 .menu-icon-open span::after {
+    width: 60%;
+}
+
+.div17 .menu-icon-open span::before {
+    transform: translate(45px, -14px) rotate(45deg);
+}
+
+.div17 .menu-icon-open span::after {
+    transform: translate(45px, 2px) rotate(-45deg);
+}
+
+.div18 .label-box {
+    position: relative;
+    width: 270px;
+}
+
+.div18 .label-box::before,
+.div18 .label-box::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    background-color: #757575;
+    transition-property: width;
+    transition-duration: 0.2s;
+}
+
+.div18 .label-box::before {
+    left: 50%;
+}
+
+.div18 .label-box::after {
+    right: 50%;
+}
+
+.div18 input:focus ~ .label-box::before,
+.div18 input:focus ~ .label-box::after {
+    width: 50%;
+}
+
+.div18 input {
+    width: 270px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    box-sizing: border-box;
+}
+
+.div18 label {
+    position: absolute;
+    top: -36px;
+    font-size: 18px;
+    color: #757575;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+.div18 input:focus ~ .label-box label,
+.div18 input:valid ~ .label-box label {
+    font-size: 14px;
+    transform: translateY(-20px);
+}
+
