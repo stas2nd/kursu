@@ -1,4 +1,11 @@
-﻿
+﻿/*для миксинов карта для уведомлений*/
+@base-color: rgb(110, 27, 255);
+@error-color: spin(@base-color, 60);
+@info-color: spin(@base-color, -60);
+@warning-color: spin(@base-color, 120);
+@success-color: spin(@base-color, -120);
+
+
 div {
     margin-right: auto;
     margin-left: auto;
